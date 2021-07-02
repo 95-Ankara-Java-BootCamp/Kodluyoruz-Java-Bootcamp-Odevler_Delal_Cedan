@@ -9,7 +9,7 @@ public class Main {
         System.out.print("Enter your average:");
         number = input.nextDouble();
 
-        if(number >= 90){
+        if(number<100 && number >= 90){
             System.out.println("AA");
         }
         else if(number <90 && number >=80){
