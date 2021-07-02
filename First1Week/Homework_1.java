@@ -24,5 +24,6 @@ public class Homework_1 {
         } else if (number < 45) {
             System.out.println("FF");
         }
+
     }
 }

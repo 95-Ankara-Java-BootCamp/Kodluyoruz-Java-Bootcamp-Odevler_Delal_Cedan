@@ -32,7 +32,6 @@ public class Homework_2 {
         toplam = armT + elmaT + domT + muzT + patT;
         System.out.print("Toplam:");
         System.out.println(toplam);
-
     }
 }
 
