@@ -1,9 +1,13 @@
 package First1Week;
 
 import java.util.Scanner;
-/* okul puanlarını harf karşılığını yazan program */
+/*
+    okul puanlarını harf karşılığını yazan program
+
+*/
 
 public class Homework_1 {
+    
     public static void main(String[] args) {
         double number;
         Scanner input = new Scanner(System.in);
