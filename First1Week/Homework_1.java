@@ -1,6 +1,7 @@
 package First1Week;
 
 import java.util.Scanner;
+/* okul puanlarını harf karşılığını yazan program */
 
 public class Homework_1 {
     public static void main(String[] args) {
@@ -9,19 +10,13 @@ public class Homework_1 {
         System.out.print("Enter your average:");
         number = input.nextDouble();
 
-        if (number < 100 && number >= 90) {
+        if (number < 100 && number >= 70) {
             System.out.println("AA");
-        } else if (number < 90 && number >= 80) {
-            System.out.println("BA");
-        } else if (number < 80 && number >= 70) {
-            System.out.println("BB+");
-        } else if (number < 70 && number >= 60) {
+        } else if (number < 70 && number >= 50) {
             System.out.println("BB");
-        } else if (number < 60 && number >= 50) {
-            System.out.println("BC");
-        } else if (number < 50 && number >= 45) {
+        } else if (number < 50 && number >= 35) {
             System.out.println("CC");
-        } else if (number < 45) {
+        } else if (number < 35) {
             System.out.println("FF");
         }
 
