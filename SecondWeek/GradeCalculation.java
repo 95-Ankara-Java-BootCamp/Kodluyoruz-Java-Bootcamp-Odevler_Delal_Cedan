@@ -1,8 +1,10 @@
 package SecondWeek;
 
     /*
+
     * Midterm Degree = 30%
     * final Degree = 70%
+
     */
 
 import java.util.Scanner;
