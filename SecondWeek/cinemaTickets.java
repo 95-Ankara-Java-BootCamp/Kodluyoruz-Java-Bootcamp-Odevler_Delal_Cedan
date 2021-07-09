@@ -21,7 +21,7 @@ public class cinemaTickets {
         System.out.print("Please Enter Your Age: ");
          age = scan.nextInt();
         System.out.print("Please Choose 1. For not a horror movie 2. For a horror movie: ");
-        mType = scan.nextInt();        //movie type
+        mType = scan.nextInt();       //movie type
 
         while (age<18 && mType==2){
             System.out.println("Sorry for your age is not allowed this kind of movies. Please choose number 1");

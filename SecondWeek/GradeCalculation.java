@@ -1,19 +1,24 @@
 package SecondWeek;
 
+    /*
+    * Midterm Degree = 30%
+    * final Degree = 70%
+    */
+
 import java.util.Scanner;
 
 public class GradeCalculation {
 
     static double average = 0;
 
-    static double calculateAverage(double midtermNote, double finalNote) {
-        average = (midtermNote * 0.30) + (finalNote * 0.70);
+    static double calculateAverage(double midtermDegree, double finalDegree) { //to calculate our average
+        average = (midtermDegree * 0.30) + (finalDegree * 0.70);
         System.out.println("Your Average : " + average);
 
         return average;
     }
 
-    private static void letterGrade(double average) {
+    private static void letterGrade(double average) { // to take our letter grade
 
         if (average < 100 && average >= 70) {
             System.out.println("congratulations, Your Letter Grade : AA");
@@ -29,22 +34,22 @@ public class GradeCalculation {
 
     public static void main(String[] args) {
 
-        double midtermNote , finalNote;
+        double midtermDegree , finalDegree;
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter your Midterm Note :");
-        midtermNote = scan.nextDouble();
+        midtermDegree = scan.nextDouble();
 
         System.out.print("Enter Your Final Nore :");
-        finalNote = scan.nextDouble();
+        finalDegree = scan.nextDouble();
 
-        if ((midtermNote < 0 || midtermNote > 100) || (finalNote < 0 || finalNote > 100)) {
+        if ((midtermDegree < 0 || midtermDegree > 100) || (finalDegree < 0 || finalDegree > 100)) {
 
             System.out.println("Sorry Wrong Data.Please make sure that your grade between 0 and 100");
 
         } else {
 
-            calculateAverage(midtermNote, finalNote);
+            calculateAverage(midtermDegree, finalDegree);
             letterGrade(average);
         }
 
