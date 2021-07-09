@@ -1,6 +1,4 @@
-package First1Week;
-
-import java.util.Scanner;
+package FirstWeek;
 
 public class Homework_3 {
 
