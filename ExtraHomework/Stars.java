@@ -11,5 +11,14 @@ public class Stars {
             }
             System.out.println();
         }
+        System.out.println("");
+
+        int[] star2 = new int[4];
+        for (int i=star2.length ; i>=0; i--){
+            for (int j=1 ; j<=i ; j++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
     }
 }
