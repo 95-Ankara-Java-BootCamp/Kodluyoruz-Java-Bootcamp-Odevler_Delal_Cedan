@@ -3,11 +3,11 @@ package SecondWeek;
 import java.util.*;
 
 /**
- * Bir kirtasiye dükkanina mal geliyor.
- * Kýrtasiyeci kalem, silgi gibi malzemelerin kaydini sisteme girecek.
- * soru 1: Toplam kaç adet mal aldi.
- * soru 2: Hangi maldan kaç adet aldi.
- * soru 3: Kac çesit mali var.
+ * Bir kırtasiye dükkanına ürünler geliyor.
+ * Kırtasiyeci kalem, silgi gibi malzemelerin kaydını sisteme girecek.
+ * 1: Toplam kaç adet ürün aldı?
+ * 2: Hangi üründen kaç adet aldı?
+ * 3: Kaç çeşit ürünü var?
  */
 
 public class Kirtasiye {
@@ -15,18 +15,18 @@ public class Kirtasiye {
         public static void main(String[] args) {
 
             Scanner scan = new Scanner(System.in);
-            // soru 1: Toplam kaç adet mal aldi.
+            //  1: Toplam kaç adet ürün aldı?
 
-            List<String> depo = new ArrayList<>();
+            List<String> store = new ArrayList<>();
             while (true) {
-                System.out.println("Meyve giriniz : ");
+                System.out.println("Enter stop if you finish  \n  Please Enter Your Product : ");
                 String goods = scan.nextLine();
-                if (goods.equals("cikis")) {
+                if (goods.equals("stop")) {
                     break;
                 }
-                depo.add(goods);
+                store.add(goods);
             }
-            System.out.println("Toplam kaç adet ürün aldı ? " + depo.size());
+            System.out.println("Total number of products:  ? " + store.size());
 
 
 //        HashMap<Integer , String> hashMapMal = new HashMap();
@@ -35,9 +35,9 @@ public class Kirtasiye {
 //        System.out.println(" " +value);
 
 
-            //  soru 3: Kac çesit mali var.
-            HashSet<Object> hashSet = new HashSet<>(depo);
-            System.out.println("Kaç çeşit ürünü var? " + hashSet.size());
+            //  3: Kaç çeşit ürünü var?
+            HashSet<Object> hashSet = new HashSet<>(store);
+            System.out.println("Total number of categories ? " + hashSet.size());
         }
 
 }
