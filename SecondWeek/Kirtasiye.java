@@ -36,6 +36,7 @@ public class Kirtasiye {
 
 
             //  3: Kaç çeşit ürünü var?
+
             HashSet<Object> hashSet = new HashSet<>(store);
             System.out.println("Total number of categories ? " + hashSet.size());
         }
