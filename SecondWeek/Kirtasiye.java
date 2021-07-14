@@ -15,7 +15,7 @@ public class Kirtasiye {
         public static void main(String[] args) {
 
             Scanner scan = new Scanner(System.in);
-            //  1: Toplam kaç adet ürün aldı?
+            //   Toplam kaç adet ürün aldı?
 
             List<String> store = new ArrayList<>();
             while (true) {
@@ -29,13 +29,8 @@ public class Kirtasiye {
             System.out.println("Total number of products:  ? " + store.size());
 
 
-//        HashMap<Integer , String> hashMapMal = new HashMap();
-//       hashMapMal.get(depo);
-//        String value = hashMapMal.get(depo);
-//        System.out.println(" " +value);
 
-
-            //  3: Kaç çeşit ürünü var?
+            //   Kaç çeşit ürünü var?
 
             HashSet<Object> hashSet = new HashSet<>(store);
             System.out.println("Total number of categories ? " + hashSet.size());
